@@ -9,7 +9,6 @@ function StudyCard({ card = {}, title, littleChild }) {
     setFlipped(true);
   }
   useEffect(() => {
-    //Accepts a function that contains imperative, possibly effectful code.
     setView("front");
     setFlipped(false);
   }, [card]);

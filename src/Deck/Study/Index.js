@@ -36,13 +36,15 @@ function Study() {
       </div>
     );
   }
+  const LC = (
+    <button type="button" className="btn btn-primary" onClick={nextHandler}>
+      Next
+    </button>
+  );
   return (
     <div>
       <StudyPage name={deck.name} deckId={deckId} />
-      <StudyCard card={card} title={cardTitleText} />
-      <button type="button" className="btn btn-primary" onClick={nextHandler}>
-        Next
-      </button>
+      <StudyCard card={card} title={cardTitleText} littleChild={LC} />
     </div>
   );
 }
