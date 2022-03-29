@@ -11,8 +11,8 @@
       "id": 2
     },
     {
-      "name": "Ty",
-      "description": "Hello World\n",
+      "name": "Test",
+      "description": "Test",
       "id": 3
     }
   ],
@@ -53,21 +53,6 @@
       "back": "b",
       "deckId": 1,
       "id": 7
-    },
-    {
-      "cards": [],
-      "deckId": 3,
-      "id": 8
-    },
-    {
-      "cards": [],
-      "deckId": 3,
-      "id": 9
-    },
-    {
-      "cards": [],
-      "deckId": 3,
-      "id": 10
     }
   ]
 }
