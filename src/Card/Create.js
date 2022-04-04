@@ -11,14 +11,10 @@ function CardCreate() {
   useEffect(() => {
     readDeck(deckId).then(setDeck);
   }, [deckId]);
-  function submitHandler(card, e) {
-    e.preventDefault();
-    e.stopPropagation();
+  function submitHandler(card) {
     createCard(deckId, card);
   }
-  function doneHandler(e) {
-    e.preventDefault();
-    e.stopPropagation();
+  function doneHandler() {
     history.push(`/decks/${deckId}`);
   }
   return (

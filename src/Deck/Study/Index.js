@@ -14,7 +14,6 @@ function Study() {
   useEffect(() => {
     readDeck(deckId).then(setDeck);
   }, [deckId]);
-  console.log(deck);
 
   const cardCountNum = deck.cards.length;
   const nextHandler = () => {

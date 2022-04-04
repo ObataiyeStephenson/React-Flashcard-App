@@ -9,12 +9,13 @@ function CardForm({
 }) {
   const [card, setCard] = useState(initialState);
 
-  function changeHandler({ target: { name, value } }) {}
-  function submitHandler(e) {
-    e.preventDefault();
-    e.stopPropagation();
+  function changeHandler({ target: { name, value } }) {
+    setCard(() => ({ ...card, [name]: [value] }));
+  }
+  function submitHandler(event) {
+    event.preventDefault();
+    event.stopPropagation();
     onSubmit({ ...card });
-    console.log("card: ", card);
     setCard({ front: "", back: "" });
   }
   return (
@@ -50,7 +51,7 @@ function CardForm({
         <button
           type="button"
           className="btn btn-secondary mr-2"
-          onDone={onDone}
+          onClick={onDone}
           tabIndex="4"
         >
           {doneButtonLabel}

@@ -1,13 +1,3 @@
-// import React from "react";
-// import Header from "./Header";
-// import NotFound from "./NotFound";
-// import { Switch, Route } from "react-router-dom";
-// import Home from "../Routes/home";
-// import AddDeck from "../Routes/addDeck";
-// import Study from "../utils/decks/study";
-
-
-// ted
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "../Home";
@@ -58,30 +48,5 @@ function Layout() {
     </>
   );
 }
-// function Layout() {
-//   return (
-//     <>
-//       <Header />
-//       <div className="container">
-//         {/* TODO: Implement the screen starting here */}
-//         <Switch>
-//           <Route exact path="/">
-//             <Home />
-//           </Route>
-
-//           <Route path="/decks/new">
-//             <AddDeck />
-//           </Route>
-
-//           <Route path="/decks/:deckId/study">
-//             <Study />
-//           </Route>
-
-//           <NotFound />
-//         </Switch>
-//       </div>
-//     </>
-//   );
-// }
 
 export default Layout;
