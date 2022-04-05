@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { createCard, readDeck } from "../utils/api";
-import CardForm from "./Form";
+import CardForm from "./CardForm";
 
 function CardCreate() {
   const history = useHistory();
